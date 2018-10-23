@@ -27,7 +27,7 @@ https://ru.tgr.am/vote/down/@{username}/1
  GET https://ru.tgr.am/fav/{post}/@{username}/{post}
 ```
 #### Comments:
-[Example](../blob/master/comment.html)
+[Example](../comment.html)
 [POC](https://dokzlo13.github.io/typegram_attacks/comment.html) (require enabled js)
 ```
  POST https://ru.tgr.am/comments/@{username}/{post}
@@ -37,7 +37,7 @@ https://ru.tgr.am/vote/down/@{username}/1
  GET https://ru.tgr.am/commentdel/@{username}/{username}/{post}/{comment}
 ```
 #### New post
-[Example](../blob/master/post.html)
+[Example](../post.html)
 [POC](https://dokzlo13.github.io/typegram_attacks/post.html) (require enabled js)
 ```
  POST https://ru.tgr.am/editor/0
