@@ -13,8 +13,8 @@ If own instance of typegram has inproper configs vulnerability can be executed.
 ### Vulnerable methods:
 #### Votes:
 ```
-https://ru.tgr.am/vote/up/@{username}/1
-https://ru.tgr.am/vote/down/@{username}/1
+https://ru.tgr.am/vote/up/@{username}/{post}
+https://ru.tgr.am/vote/down/@{username}/{post}
 ```
 #### Follows:
 ```
